@@ -5,19 +5,22 @@ class Navigation extends Component {
   render() {
     return (
       <>
-        <Navbar bg="primary" variant="dark">
+        <Navbar bg="primary" expand="lg" variant="dark">
+          <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
           <Navbar.Brand href="#">Luxe Hotel</Navbar.Brand>
-          <Nav style={{ flex: 1, justifyContent: "flex-end" }}>
-            <Nav.Item>
-              <Nav.Link>Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>About</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>Contact</Nav.Link>
-            </Nav.Item>
-          </Nav>
+          <Navbar.Collapse id="navbar">
+            <Nav className="ml-auto">
+              <Nav.Item>
+                <Nav.Link>Home</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>About</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>Contact</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </>
     );
