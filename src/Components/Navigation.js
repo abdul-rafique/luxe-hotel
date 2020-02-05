@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Dropdown, Button, ButtonGroup } from "react-bootstrap";
 
 class Navigation extends Component {
   render() {
@@ -8,6 +8,7 @@ class Navigation extends Component {
         <Navbar bg="primary" expand="lg" variant="dark">
           <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
           <Navbar.Brand href="#">Luxe Hotel</Navbar.Brand>
+
           <Navbar.Collapse id="navbar">
             <Nav className="ml-auto">
               <Nav.Item>
@@ -21,6 +22,10 @@ class Navigation extends Component {
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
+          <ButtonGroup className="ml-md-3">
+            <Button variant="secondary">Sign In</Button>
+            <Button variant="light">Sign Up</Button>
+          </ButtonGroup>
         </Navbar>
       </>
     );
