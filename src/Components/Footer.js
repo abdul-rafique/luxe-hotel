@@ -4,7 +4,11 @@ import { Row, Col, Card, Nav, ListGroup } from "react-bootstrap";
 function MyFooter() {
   return (
     <>
+<<<<<<< HEAD
       <Row noGutters className="border-top">
+=======
+      <Row noGutters>
+>>>>>>> a2fde41cb7737289c0d6efa72eb071d5cb3f030f
         <Col>
           <Card className="rounded-0 border-0 pl-3 pr-3">
             <Card.Body>
