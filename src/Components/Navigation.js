@@ -1,24 +1,38 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Dropdown, Button, ButtonGroup } from "react-bootstrap";
+import { Navbar, Nav, Button, ButtonGroup } from "react-bootstrap";
 
 class Navigation extends Component {
   render() {
     return (
       <>
-        <Navbar bg="primary" expand="lg" variant="dark">
+        <Navbar
+          expand="lg"
+          sticky="top"
+          variant="dark"
+          style={{ background: "#17c0eb" }}
+        >
           <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
           <Navbar.Brand href="#">Luxe Hotel</Navbar.Brand>
 
           <Navbar.Collapse id="navbar">
-            <Nav className="ml-auto">
+            <Nav defaultActiveKey="/home" className="ml-auto">
               <Nav.Item>
-                <Nav.Link>Home</Nav.Link>
+                <Nav.Link href="/home">Home</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link>About</Nav.Link>
+                <Nav.Link eventKey="link-1">Our Rooms</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link>Contact</Nav.Link>
+                <Nav.Link eventKey="link-2">Restaurant</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="link-3">About Us</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="link-4">Blog</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="link-5">Contact</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

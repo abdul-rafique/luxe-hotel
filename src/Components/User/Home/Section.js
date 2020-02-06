@@ -102,7 +102,7 @@ function Section() {
         </Row>
       </Card>
 
-      <Card>
+      <Card className="border-0">
         <Card.Body className="text-center">
           <h3>Our Mission</h3>
           <p className="pl-5 pr-5 lead text-justify">

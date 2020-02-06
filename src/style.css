@@ -1,3 +1,25 @@
+/* ---------------- Universal Style ---------------- */
+.my-bgprimary {
+  background-color: "#18dcff" !important;
+}
+
+.my-bg-secondary {
+  background-color: "#ffcccc" !important;
+}
+
+.my-text-primary {
+  color: "" !important;
+}
+
+.my-text-secondary {
+  color: "" !important;
+}
+
+/* ---------------- Navigation Style ---------------- */
+.custom-navlink {
+  background: "#ffb8b8" !important;
+}
+
 /* ---------------- Slider Style ---------------- */
 
 .h-100vh {

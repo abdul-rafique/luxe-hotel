@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import Home from "./Components/Home/Index";
+import Home from "./Components/User/Home/Index";
 import Navigation from "./Components/Navigation";
 import MyFooter from "./Components/Footer";
 
