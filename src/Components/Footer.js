@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 function MyFooter() {
   return (
     <>
-      <Row>
+      <Row noGutters>
         <Col>
           <h3>Logo</h3>
         </Col>
