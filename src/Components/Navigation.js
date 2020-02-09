@@ -1,7 +1,23 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Button, ButtonGroup } from "react-bootstrap";
+import { Navbar, Nav, Button, Modal } from "react-bootstrap";
 
 class Navigation extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showModal: false
+    };
+  }
+
+  handleClose = () => {
+    this.setState({ showModal: false });
+  };
+
+  handleShow = () => {
+    this.setState({ showModal: true });
+  };
+
   render() {
     return (
       <>
@@ -36,11 +52,27 @@ class Navigation extends Component {
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
-          <ButtonGroup className="ml-md-3">
-            <Button variant="secondary">Sign In</Button>
-            <Button variant="light">Sign Up</Button>
-          </ButtonGroup>
+          <Button
+            className="ml-md-5"
+            variant="outline-light"
+            onClick={this.handleShow}
+          >
+            Sign In
+          </Button>
         </Navbar>
+
+        <Modal show={this.state.showModal} onHide={this.handleClose}>
+          <Modal.Header className="border-0">
+            <span
+              className="close"
+              onClick={this.handleClose}
+              style={{ cursor: "pointer" }}
+            >
+              &times;
+            </span>
+          </Modal.Header>
+          <Modal.Body></Modal.Body>
+        </Modal>
       </>
     );
   }
