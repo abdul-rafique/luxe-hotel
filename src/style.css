@@ -1,10 +1,18 @@
+/* ---------------- Fonts ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Mogra&family=Monoton&display=swap");
+
 /* ---------------- Universal Style ---------------- */
-.my-bgprimary {
+.my-bg-primary {
   background-color: "#18dcff" !important;
 }
 
 .my-bg-secondary {
   background-color: "#ffcccc" !important;
+}
+
+.bg-none {
+  background: none !important;
 }
 
 .my-text-primary {
@@ -15,7 +23,19 @@
   color: "" !important;
 }
 
+.page-cover {
+  background-color: #00000066;
+}
+
+.page-cover h1 {
+  font-family: "Monoton", "cursive" !important;
+}
+
 /* ---------------- Navigation Style ---------------- */
+.brand {
+  font-family: "Mogra", cursive;
+}
+
 .custom-navlink {
   background: "#ffb8b8" !important;
 }
@@ -24,4 +44,118 @@
 
 .h-100vh {
   height: 100vh !important;
+}
+
+@media (min-width: 0px) {
+  .border-xs-0 {
+    border: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .border-sm-0 {
+    border: none !important;
+  }
+
+  .border-sm-left {
+    border-left: 1px solid #292b2c !important;
+  }
+
+  .border-sm-right {
+    border-right: 1px solid #292b2c !important;
+  }
+
+  .border-sm-top {
+    border-top: 1px solid #292b2c !important;
+  }
+
+  .border-sm-bottom {
+    border-bottom: 1px solid #292b2c !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .border-md-0 {
+    border: none !important;
+  }
+
+  .border-md-left {
+    border-left: 1px solid #292b2c !important;
+  }
+
+  .border-md-right {
+    border-right: 1px solid #292b2c !important;
+  }
+
+  .border-md-top {
+    border-top: 1px solid #292b2c !important;
+  }
+
+  .border-md-bottom {
+    border-bottom: 1px solid #292b2c !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .border-lg-0 {
+    border: none !important;
+  }
+
+  .border-lg-left {
+    border-left: 1px solid #292b2c !important;
+  }
+
+  .border-lg-right {
+    border-right: 1px solid #292b2c !important;
+  }
+
+  .border-lg-top {
+    border-top: 1px solid #292b2c !important;
+  }
+
+  .border-lg-bottom {
+    border-bottom: 1px solid #292b2c !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .border-xl-0 {
+    border: none !important;
+  }
+
+  .border-xl-left {
+    border-left: 1px solid #292b2c !important;
+  }
+
+  .border-xl-right {
+    border-right: 1px solid #292b2c !important;
+  }
+
+  .border-xl-top {
+    border-top: 1px solid #292b2c !important;
+  }
+
+  .border-xl-bottom {
+    border-bottom: 1px solid #292b2c !important;
+  }
+}
+
+/* --------------- Datepicker Style --------------------- */
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+/* --------------- Rooms Page Style --------------------- */
+.breadcrumb {
+  background-color: #e9ecefcd !important;
+}
+
+/* --------------- Restaurent Page Style --------------------- */
+.meal-bg-overlay {
+  background-color: #007bff33;
+}
+
+.meal:hover .meal-bg-overlay {
+  background-color: #007bffbb;
 }
